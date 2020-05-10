@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_wzQFAJIbEeqdJYB9uw_ECw" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_wzQFAZIbEeqdJYB9uw_ECw" comment="" name="REPERTOIRE_ENTREE" prompt="REPERTOIRE_ENTREE?" promptNeeded="false" type="id_Directory" value=""/>
+    <contextParameter xmi:id="_wzQFApIbEeqdJYB9uw_ECw" comment="" name="REPERTOIRE_SORTIE" prompt="REPERTOIRE_SORTIE?" promptNeeded="false" type="id_Directory" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wzQFA5IbEeqdJYB9uw_ECw" confirmationNeeded="false" name="LOCAL">
+    <contextParameter xmi:id="_wzQFBJIbEeqdJYB9uw_ECw" comment="" name="REPERTOIRE_ENTREE" prompt="REPERTOIRE_ENTREE?" promptNeeded="false" type="id_Directory" value="/tmp/entree"/>
+    <contextParameter xmi:id="_wzQFBZIbEeqdJYB9uw_ECw" comment="" name="REPERTOIRE_SORTIE" prompt="REPERTOIRE_SORTIE?" promptNeeded="false" type="id_Directory" value="p"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_wzQFBpIbEeqdJYB9uw_ECw" confirmationNeeded="false" name="QUALIFICATION">
+    <contextParameter xmi:id="_wzQFB5IbEeqdJYB9uw_ECw" comment="" name="REPERTOIRE_ENTREE" prompt="REPERTOIRE_ENTREE?" promptNeeded="false" type="id_Directory" value="/var/app1/in"/>
+    <contextParameter xmi:id="_wzQFCJIbEeqdJYB9uw_ECw" comment="" name="REPERTOIRE_SORTIE" prompt="REPERTOIRE_SORTIE?" promptNeeded="false" type="id_Directory" value="/var/app1/out"/>
+  </talendfile:ContextType>
+</xmi:XMI>
