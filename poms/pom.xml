@@ -9,6 +9,8 @@
   <name>FORMATION Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
+    <module>jobs/process/A_le_runtime/showenvironment_0.1</module>
+    <module>jobs/process/A_le_runtime/simplereadfile_0.1</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
     <module>code/routines</module>
   </modules>
