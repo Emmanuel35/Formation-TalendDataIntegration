@@ -12,6 +12,7 @@
     <module>jobs/process/A_le_runtime/simplereadfile_0.1</module>
     <module>code/routines</module>
     <module>jobs/process/A_le_runtime/usecontext_0.1</module>
+    <module>jobs/process/C_composants_de_base/managexmlfile_0.1</module>
   </modules>
   <properties>
     <talend.project.name>FORMATION</talend.project.name>

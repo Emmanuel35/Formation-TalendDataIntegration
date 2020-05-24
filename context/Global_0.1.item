@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_o30UMJ27Eeq0OqX8BxO5WQ" confirmationNeeded="false" name="QUA">
+    <contextParameter xmi:id="_o30UMZ27Eeq0OqX8BxO5WQ" comment="" name="myvar" prompt="myvar?" promptNeeded="false" type="id_String" value="abc"/>
+    <contextParameter xmi:id="_o30UMp27Eeq0OqX8BxO5WQ" comment="" name="othervar" prompt="othervar?" promptNeeded="false" type="id_String" value="12"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_o30UM527Eeq0OqX8BxO5WQ" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_o30UNJ27Eeq0OqX8BxO5WQ" comment="" name="myvar" prompt="myvar?" promptNeeded="false" type="id_String" value="def"/>
+    <contextParameter xmi:id="_o30UNZ27Eeq0OqX8BxO5WQ" comment="" name="othervar" prompt="othervar?" promptNeeded="false" type="id_String" value="45"/>
+  </talendfile:ContextType>
+</xmi:XMI>
