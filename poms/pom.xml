@@ -16,6 +16,12 @@
     <module>jobs/process/C_composants_de_base/managexmlfile_0.1</module>
     <module>jobs/process/C_composants_de_base/transfertdvdrental_0.1</module>
     <module>code/routines</module>
+    <module>jobs/process/B_design/Factures_SAP/a1_0.1</module>
+    <module>jobs/process/B_design/Factures_SAP/b1_0.1</module>
+    <module>jobs/process/B_design/Factures_SAP/b2_0.1</module>
+    <module>jobs/process/B_design/Factures_SAP/b3_0.1</module>
+    <module>jobs/process/B_design/Factures_SAP/factures_sap_0.1</module>
+    <module>jobs/process/B_design/Factures_SAP/t1_0.1</module>
   </modules>
   <properties>
     <talend.project.name>FORMATION</talend.project.name>
