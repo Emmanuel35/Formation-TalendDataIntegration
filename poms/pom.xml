@@ -10,11 +10,12 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>jobs/process/A_le_runtime/simplereadfile_0.1</module>
-    <module>code/routines</module>
     <module>jobs/process/A_le_runtime/usecontext_0.1</module>
-    <module>jobs/process/C_composants_de_base/managexmlfile_0.1</module>
-    <module>jobs/process/C_composants_de_base/loadfilearn_0.1</module>
     <module>jobs/process/C_composants_de_base/listrnafilesandlaunch_0.1</module>
+    <module>jobs/process/C_composants_de_base/loadfilearn_0.1</module>
+    <module>jobs/process/C_composants_de_base/managexmlfile_0.1</module>
+    <module>jobs/process/C_composants_de_base/transfertdvdrental_0.1</module>
+    <module>code/routines</module>
   </modules>
   <properties>
     <talend.project.name>FORMATION</talend.project.name>

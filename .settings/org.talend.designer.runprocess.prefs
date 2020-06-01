@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+template_sh_script=\#\!/bin/sh\ncd `dirname $0`\nROOT_PATH\=`pwd`\r\n\r\nCLASSPATH\=${talend.job.sh.classpath}\r\nJVM_ARGS\=${talend.job.jvmargs}\r\n\njava -Dtalend.component.manager.m2.repository\=$ROOT_PATH/../lib \\\r\n  $JVM_ARGS \\\r\n  -cp $CLASSPATH \\\r\n  ${talend.job.class} ${talend.job.sh.addition} "$@"

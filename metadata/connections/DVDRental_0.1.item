@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_4S7ZUKKHEeqztpcIrsZbmw" name="DVDRental" id="_pnTH0KKGEeqztpcIrsZbmw" label="DVDRental" dataPackage="_4TeL4KKHEeqztpcIrsZbmw" ContextMode="true" ContextId="_sXosAKKHEeqztpcIrsZbmw" contextName="AWS" DatabaseType="PostgreSQL" DriverClass="org.postgresql.Driver" URL="jdbc:postgresql://localhost:5432/dvdrental?" dbVersionString="V9_X" Port="context.DVDRental_Port" Username="context.DVDRental_Login" Password="context.DVDRental_Password" ServerName="context.DVDRental_Server" DatasourceName="" FileFieldName="" SID="context.DVDRental_Database" SqlSynthax="" StringQuote="" NullChar="" DbmsId="postgres_id" ProductId="POSTGRESQL" AdditionalParams="context.DVDRental_AdditionalParams" StandardSQL="true" SQLMode="false" UiSchema="context.DVDRental_Schema">
+    <taggedValue xmi:id="_4S7ZUaKHEeqztpcIrsZbmw" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_4TFKUKKHEeqztpcIrsZbmw" tag="package filter" value=""/>
+    <taggedValue xmi:id="_4TJbwKKHEeqztpcIrsZbmw" tag="Status" value=""/>
+    <taggedValue xmi:id="_4TJbwaKHEeqztpcIrsZbmw" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_4TJbwqKHEeqztpcIrsZbmw" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_4TJbw6KHEeqztpcIrsZbmw" tag="Description" value=""/>
+    <taggedValue xmi:id="_4TJbxKKHEeqztpcIrsZbmw" tag="Author" value=""/>
+    <taggedValue xmi:id="_4TKC0KKHEeqztpcIrsZbmw" tag="otherParameter"/>
+    <taggedValue xmi:id="_4TMfEKKHEeqztpcIrsZbmw" tag="DB ProductName" value="PostgreSQL"/>
+    <taggedValue xmi:id="_4TMfEaKHEeqztpcIrsZbmw" tag="DB ProductVersion" value="12.2 (Debian 12.2-2.pgdg100+1)"/>
+    <taggedValue xmi:id="_4TMfEqKHEeqztpcIrsZbmw" tag="DB IdentifierQuoteString" value="&quot;"/>
+    <queries xmi:id="_uNl-YKQDEeqNu4suIlsq3Q">
+      <query xmi:id="_uNl-YqQDEeqNu4suIlsq3Q" id="_uNl-YaQDEeqNu4suIlsq3Q" label="Sales" value="SELECT p.payment_id, c.email, p.payment_date, f.title, p.amount&#xD;&#xA;FROM payment p&#xD;&#xA;INNER JOIN customer c ON (p.customer_id = c.customer_id)&#xD;&#xA;INNER JOIN rental r ON (p.rental_id = r.rental_id)&#xD;&#xA;INNER JOIN inventory i ON (r.inventory_id = i.inventory_id)&#xD;&#xA;INNER JOIN film f ON (i.film_id = f.film_id)&#xD;&#xA;WHERE&#xD;&#xA;p.payment_date between DATE '2007-02-01' and DATE '2007-03-01'&#xD;&#xA;order by p.payment_date asc;"/>
+    </queries>
+    <parameters xmi:id="_4S7ZUqKHEeqztpcIrsZbmw" key="CONN_PARA_KEY_USERNAME" value="context.DVDRental_Login"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_4TeL4KKHEeqztpcIrsZbmw" name="dvdrental" dataManager="_4S7ZUKKHEeqztpcIrsZbmw">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_4TeL4aKHEeqztpcIrsZbmw" name="information_schema"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_4TeL4qKHEeqztpcIrsZbmw" name="pg_catalog"/>
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_4TeL46KHEeqztpcIrsZbmw" name="public"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>
