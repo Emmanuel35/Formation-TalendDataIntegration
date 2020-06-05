@@ -22,6 +22,7 @@
     <module>jobs/process/B_design/Factures_SAP/b3_0.1</module>
     <module>jobs/process/B_design/Factures_SAP/factures_sap_0.1</module>
     <module>jobs/process/B_design/Factures_SAP/t1_0.1</module>
+    <module>jobs/process/D_composants_principaux/pushfiletosftp_0.1</module>
   </modules>
   <properties>
     <talend.project.name>FORMATION</talend.project.name>
