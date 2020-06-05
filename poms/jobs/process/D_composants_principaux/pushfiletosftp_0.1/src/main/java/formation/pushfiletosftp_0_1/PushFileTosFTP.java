@@ -118,18 +118,108 @@ public class PushFileTosFTP implements TalendJob {
 
 		public void synchronizeContext() {
 
-			if (ARN_DIR != null) {
-
-				this.setProperty("ARN_DIR", ARN_DIR.toString());
-
-			}
-
 			if (FTP_Temp != null) {
 
 				this.setProperty("FTP_Temp", FTP_Temp.toString());
 
 			}
 
+			if (ConnectTimeout != null) {
+
+				this.setProperty("ConnectTimeout", ConnectTimeout.toString());
+
+			}
+
+			if (Password != null) {
+
+				this.setProperty("Password", Password.toString());
+
+			}
+
+			if (Port != null) {
+
+				this.setProperty("Port", Port.toString());
+
+			}
+
+			if (PrivateKey != null) {
+
+				this.setProperty("PrivateKey", PrivateKey.toString());
+
+			}
+
+			if (SecretKey != null) {
+
+				this.setProperty("SecretKey", SecretKey.toString());
+
+			}
+
+			if (Server != null) {
+
+				this.setProperty("Server", Server.toString());
+
+			}
+
+			if (User != null) {
+
+				this.setProperty("User", User.toString());
+
+			}
+
+			if (ARN_DIR != null) {
+
+				this.setProperty("ARN_DIR", ARN_DIR.toString());
+
+			}
+
+		}
+
+		public String FTP_Temp;
+
+		public String getFTP_Temp() {
+			return this.FTP_Temp;
+		}
+
+		public Integer ConnectTimeout;
+
+		public Integer getConnectTimeout() {
+			return this.ConnectTimeout;
+		}
+
+		public java.lang.String Password;
+
+		public java.lang.String getPassword() {
+			return this.Password;
+		}
+
+		public Integer Port;
+
+		public Integer getPort() {
+			return this.Port;
+		}
+
+		public String PrivateKey;
+
+		public String getPrivateKey() {
+			return this.PrivateKey;
+		}
+
+		public String SecretKey;
+
+		public String getSecretKey() {
+			return this.SecretKey;
+		}
+
+		public String Server;
+
+		public String getServer() {
+			return this.Server;
+		}
+
+		public String User;
+
+		public String getUser() {
+			return this.User;
 		}
 
 		public String ARN_DIR;
@@ -138,11 +228,6 @@ public class PushFileTosFTP implements TalendJob {
 			return this.ARN_DIR;
 		}
 
-		public String FTP_Temp;
-
-		public String getFTP_Temp() {
-			return this.FTP_Temp;
-		}
 	}
 
 	protected ContextProperties context = new ContextProperties(); // will be instanciated by MS.
@@ -314,16 +399,6 @@ public class PushFileTosFTP implements TalendJob {
 	}
 
 	public void tFileCopy_1_error(Exception exception, String errorComponent,
-			final java.util.Map<String, Object> globalMap) throws TalendException {
-
-		end_Hash.put(errorComponent, System.currentTimeMillis());
-
-		status = "failure";
-
-		tFileList_1_onSubJobError(exception, errorComponent, globalMap);
-	}
-
-	public void tLogRow_2_error(Exception exception, String errorComponent,
 			final java.util.Map<String, Object> globalMap) throws TalendException {
 
 		end_Hash.put(errorComponent, System.currentTimeMillis());
@@ -552,11 +627,11 @@ public class PushFileTosFTP implements TalendJob {
 
 				int tos_count_tFTPConnection_1 = 0;
 
-				int connectionTimeout_tFTPConnection_1 = Integer.valueOf(0);
+				int connectionTimeout_tFTPConnection_1 = Integer.valueOf(context.ConnectTimeout);
 				class MyUserInfo implements com.jcraft.jsch.UserInfo, com.jcraft.jsch.UIKeyboardInteractive {
 
-					String decryptedPassphrase_tFTPConnection_1 = routines.system.PasswordEncryptUtil
-							.decryptPassword("enc:routine.encryption.key.v1:xd1dpYD229ULf8upEKmP2WKJNRGye6JR5vwXnw==");
+					String decryptedPassphrase_tFTPConnection_1 = routines.system.PasswordEncryptUtil.decryptPassword(
+							"enc:routine.encryption.key.v1:tjbEyQnakbLhsh/ysEz07CamMnzirvSeyEXWX6KwVbh8TX+PI6UnrT61z867");
 
 					String passphrase_tFTPConnection_1 = decryptedPassphrase_tFTPConnection_1;
 
@@ -588,7 +663,7 @@ public class PushFileTosFTP implements TalendJob {
 
 						final String decryptedPassword_tFTPConnection_1 = routines.system.PasswordEncryptUtil
 								.decryptPassword(
-										"enc:routine.encryption.key.v1:ym1DoMTBAHLTNc/zaumT6ASeaH0PrR3vIYTSVg==");
+										"enc:routine.encryption.key.v1:zKNh2Jlqn1xFZEjUan6etb5VFIM2eaTFQm8lQw==");
 
 						String[] password_tFTPConnection_1 = { decryptedPassword_tFTPConnection_1 };
 						return password_tFTPConnection_1;
@@ -608,11 +683,11 @@ public class PushFileTosFTP implements TalendJob {
 
 					com.jcraft.jsch.JSch jsch_tFTPConnection_1 = new com.jcraft.jsch.JSch();
 
-					jsch_tFTPConnection_1.addIdentity("D:/Formations/TalendDataIntegration/formation-AWS.ppk",
+					jsch_tFTPConnection_1.addIdentity(context.PrivateKey,
 							defaultUserInfo_tFTPConnection_1.getPassphrase());
 
-					session_tFTPConnection_1 = jsch_tFTPConnection_1.getSession("formation",
-							"s-9a896f10184c4d3c8.server.transfer.eu-west-1.amazonaws.com", 22);
+					session_tFTPConnection_1 = jsch_tFTPConnection_1.getSession(context.User, context.Server,
+							context.Port);
 					session_tFTPConnection_1.setConfig("PreferredAuthentications",
 							"publickey,password,keyboard-interactive,gssapi-with-mic");
 
@@ -627,7 +702,7 @@ public class PushFileTosFTP implements TalendJob {
 						}
 						session_tFTPConnection_1.setProxy(proxy_tFTPConnection_1);
 					} else if ("local".equals(System.getProperty("http.proxySet"))) {
-						String uriString = "s-9a896f10184c4d3c8.server.transfer.eu-west-1.amazonaws.com" + ":" + 22;
+						String uriString = context.Server + ":" + context.Port;
 						java.net.Proxy proxyToUse = org.talend.proxy.TalendProxySelector.getInstance()
 								.getProxyForUriString(uriString);
 
@@ -785,122 +860,6 @@ public class PushFileTosFTP implements TalendJob {
 		globalMap.put("tFTPConnection_1_SUBPROCESS_STATE", 1);
 	}
 
-	public static class row2Struct implements routines.system.IPersistableRow<row2Struct> {
-		final static byte[] commonByteArrayLock_FORMATION_PushFileTosFTP = new byte[0];
-		static byte[] commonByteArray_FORMATION_PushFileTosFTP = new byte[0];
-
-		public String filename;
-
-		public String getFilename() {
-			return this.filename;
-		}
-
-		private String readString(ObjectInputStream dis) throws IOException {
-			String strReturn = null;
-			int length = 0;
-			length = dis.readInt();
-			if (length == -1) {
-				strReturn = null;
-			} else {
-				if (length > commonByteArray_FORMATION_PushFileTosFTP.length) {
-					if (length < 1024 && commonByteArray_FORMATION_PushFileTosFTP.length == 0) {
-						commonByteArray_FORMATION_PushFileTosFTP = new byte[1024];
-					} else {
-						commonByteArray_FORMATION_PushFileTosFTP = new byte[2 * length];
-					}
-				}
-				dis.readFully(commonByteArray_FORMATION_PushFileTosFTP, 0, length);
-				strReturn = new String(commonByteArray_FORMATION_PushFileTosFTP, 0, length, utf8Charset);
-			}
-			return strReturn;
-		}
-
-		private void writeString(String str, ObjectOutputStream dos) throws IOException {
-			if (str == null) {
-				dos.writeInt(-1);
-			} else {
-				byte[] byteArray = str.getBytes(utf8Charset);
-				dos.writeInt(byteArray.length);
-				dos.write(byteArray);
-			}
-		}
-
-		public void readData(ObjectInputStream dis) {
-
-			synchronized (commonByteArrayLock_FORMATION_PushFileTosFTP) {
-
-				try {
-
-					int length = 0;
-
-					this.filename = readString(dis);
-
-				} catch (IOException e) {
-					throw new RuntimeException(e);
-
-				}
-
-			}
-
-		}
-
-		public void writeData(ObjectOutputStream dos) {
-			try {
-
-				// String
-
-				writeString(this.filename, dos);
-
-			} catch (IOException e) {
-				throw new RuntimeException(e);
-			}
-
-		}
-
-		public String toString() {
-
-			StringBuilder sb = new StringBuilder();
-			sb.append(super.toString());
-			sb.append("[");
-			sb.append("filename=" + filename);
-			sb.append("]");
-
-			return sb.toString();
-		}
-
-		/**
-		 * Compare keys
-		 */
-		public int compareTo(row2Struct other) {
-
-			int returnValue = -1;
-
-			return returnValue;
-		}
-
-		private int checkNullsAndCompare(Object object1, Object object2) {
-			int returnValue = 0;
-			if (object1 instanceof Comparable && object2 instanceof Comparable) {
-				returnValue = ((Comparable) object1).compareTo(object2);
-			} else if (object1 != null && object2 != null) {
-				returnValue = compareStrings(object1.toString(), object2.toString());
-			} else if (object1 == null && object2 != null) {
-				returnValue = 1;
-			} else if (object1 != null && object2 == null) {
-				returnValue = -1;
-			} else {
-				returnValue = 0;
-			}
-
-			return returnValue;
-		}
-
-		private int compareStrings(String string1, String string2) {
-			return string1.compareTo(string2);
-		}
-
-	}
-
 	public void tFileList_1Process(final java.util.Map<String, Object> globalMap) throws TalendException {
 		globalMap.put("tFileList_1_SUBPROCESS_STATE", 0);
 
@@ -920,8 +879,6 @@ public class PushFileTosFTP implements TalendJob {
 			}
 			if (resumeIt || globalResumeTicket) { // start the resume
 				globalResumeTicket = true;
-
-				row2Struct row2 = new row2Struct();
 
 				/**
 				 * [tFileList_1 begin ] start
@@ -1047,141 +1004,9 @@ public class PushFileTosFTP implements TalendJob {
 					NB_ITERATE_tFileCopy_1++;
 
 					if (execStat) {
-						runStat.updateStatOnConnection("row2", 3, 0);
-					}
-
-					if (execStat) {
 						runStat.updateStatOnConnection("iterate1", 1, "exec" + NB_ITERATE_tFileCopy_1);
 						// Thread.sleep(1000);
 					}
-
-					/**
-					 * [tLogRow_2 begin ] start
-					 */
-
-					ok_Hash.put("tLogRow_2", false);
-					start_Hash.put("tLogRow_2", System.currentTimeMillis());
-
-					currentComponent = "tLogRow_2";
-
-					if (execStat) {
-						runStat.updateStatOnConnection(resourceMap, iterateId, 0, 0, "row2");
-					}
-
-					int tos_count_tLogRow_2 = 0;
-
-					///////////////////////
-
-					class Util_tLogRow_2 {
-
-						String[] des_top = { ".", ".", "-", "+" };
-
-						String[] des_head = { "|=", "=|", "-", "+" };
-
-						String[] des_bottom = { "'", "'", "-", "+" };
-
-						String name = "";
-
-						java.util.List<String[]> list = new java.util.ArrayList<String[]>();
-
-						int[] colLengths = new int[1];
-
-						public void addRow(String[] row) {
-
-							for (int i = 0; i < 1; i++) {
-								if (row[i] != null) {
-									colLengths[i] = Math.max(colLengths[i], row[i].length());
-								}
-							}
-							list.add(row);
-						}
-
-						public void setTableName(String name) {
-
-							this.name = name;
-						}
-
-						public StringBuilder format() {
-
-							StringBuilder sb = new StringBuilder();
-
-							sb.append(print(des_top));
-
-							int totals = 0;
-							for (int i = 0; i < colLengths.length; i++) {
-								totals = totals + colLengths[i];
-							}
-
-							// name
-							sb.append("|");
-							int k = 0;
-							for (k = 0; k < (totals + 0 - name.length()) / 2; k++) {
-								sb.append(' ');
-							}
-							sb.append(name);
-							for (int i = 0; i < totals + 0 - name.length() - k; i++) {
-								sb.append(' ');
-							}
-							sb.append("|\n");
-
-							// head and rows
-							sb.append(print(des_head));
-							for (int i = 0; i < list.size(); i++) {
-
-								String[] row = list.get(i);
-
-								java.util.Formatter formatter = new java.util.Formatter(new StringBuilder());
-
-								StringBuilder sbformat = new StringBuilder();
-								sbformat.append("|%1$-");
-								sbformat.append(colLengths[0]);
-								sbformat.append("s");
-
-								sbformat.append("|\n");
-
-								formatter.format(sbformat.toString(), (Object[]) row);
-
-								sb.append(formatter.toString());
-								if (i == 0)
-									sb.append(print(des_head)); // print the head
-							}
-
-							// end
-							sb.append(print(des_bottom));
-							return sb;
-						}
-
-						private StringBuilder print(String[] fillChars) {
-							StringBuilder sb = new StringBuilder();
-							// first column
-							sb.append(fillChars[0]);
-
-							// last column
-							for (int i = 0; i < colLengths[0] - fillChars[0].length() - fillChars[1].length()
-									+ 2; i++) {
-								sb.append(fillChars[2]);
-							}
-							sb.append(fillChars[1]);
-							sb.append("\n");
-							return sb;
-						}
-
-						public boolean isTableEmpty() {
-							if (list.size() > 1)
-								return false;
-							return true;
-						}
-					}
-					Util_tLogRow_2 util_tLogRow_2 = new Util_tLogRow_2();
-					util_tLogRow_2.setTableName("tLogRow_2");
-					util_tLogRow_2.addRow(new String[] { "filename", });
-					StringBuilder strBuffer_tLogRow_2 = null;
-					int nb_line_tLogRow_2 = 0;
-///////////////////////    			
-
-					/**
-					 * [tLogRow_2 begin ] stop
-					 */
 
 					/**
 					 * [tFileCopy_1 begin ] start
@@ -1259,59 +1084,6 @@ public class PushFileTosFTP implements TalendJob {
 					 */
 
 					/**
-					 * [tLogRow_2 main ] start
-					 */
-
-					currentComponent = "tLogRow_2";
-
-					if (execStat) {
-						runStat.updateStatOnConnection(iterateId, 1, 1, "row2");
-					}
-
-///////////////////////		
-
-					String[] row_tLogRow_2 = new String[1];
-
-					if (row2.filename != null) { //
-						row_tLogRow_2[0] = String.valueOf(row2.filename);
-
-					} //
-
-					util_tLogRow_2.addRow(row_tLogRow_2);
-					nb_line_tLogRow_2++;
-//////
-
-//////                    
-
-///////////////////////    			
-
-					tos_count_tLogRow_2++;
-
-					/**
-					 * [tLogRow_2 main ] stop
-					 */
-
-					/**
-					 * [tLogRow_2 process_data_begin ] start
-					 */
-
-					currentComponent = "tLogRow_2";
-
-					/**
-					 * [tLogRow_2 process_data_begin ] stop
-					 */
-
-					/**
-					 * [tLogRow_2 process_data_end ] start
-					 */
-
-					currentComponent = "tLogRow_2";
-
-					/**
-					 * [tLogRow_2 process_data_end ] stop
-					 */
-
-					/**
 					 * [tFileCopy_1 process_data_end ] start
 					 */
 
@@ -1333,41 +1105,6 @@ public class PushFileTosFTP implements TalendJob {
 					/**
 					 * [tFileCopy_1 end ] stop
 					 */
-
-					/**
-					 * [tLogRow_2 end ] start
-					 */
-
-					currentComponent = "tLogRow_2";
-
-//////
-
-					java.io.PrintStream consoleOut_tLogRow_2 = null;
-					if (globalMap.get("tLogRow_CONSOLE") != null) {
-						consoleOut_tLogRow_2 = (java.io.PrintStream) globalMap.get("tLogRow_CONSOLE");
-					} else {
-						consoleOut_tLogRow_2 = new java.io.PrintStream(new java.io.BufferedOutputStream(System.out));
-						globalMap.put("tLogRow_CONSOLE", consoleOut_tLogRow_2);
-					}
-
-					consoleOut_tLogRow_2.println(util_tLogRow_2.format().toString());
-					consoleOut_tLogRow_2.flush();
-//////
-					globalMap.put("tLogRow_2_NB_LINE", nb_line_tLogRow_2);
-
-///////////////////////    			
-
-					if (execStat) {
-						runStat.updateStat(resourceMap, iterateId, 2, 0, "row2");
-					}
-
-					ok_Hash.put("tLogRow_2", true);
-					end_Hash.put("tLogRow_2", System.currentTimeMillis());
-
-					/**
-					 * [tLogRow_2 end ] stop
-					 */
-
 					if (execStat) {
 						runStat.updateStatOnConnection("iterate1", 2, "exec" + NB_ITERATE_tFileCopy_1);
 					}
@@ -1405,7 +1142,7 @@ public class PushFileTosFTP implements TalendJob {
 			}
 
 			if (execStat) {
-				runStat.updateStatOnConnection("OnSubjobOk3", 0, "ok");
+				runStat.updateStatOnConnection("OnSubjobOk5", 0, "ok");
 			}
 
 			tFTPPut_1Process(globalMap);
@@ -1442,16 +1179,6 @@ public class PushFileTosFTP implements TalendJob {
 
 				/**
 				 * [tFileCopy_1 finally ] stop
-				 */
-
-				/**
-				 * [tLogRow_2 finally ] start
-				 */
-
-				currentComponent = "tLogRow_2";
-
-				/**
-				 * [tLogRow_2 finally ] stop
 				 */
 
 			} catch (java.lang.Exception e) {
@@ -1748,7 +1475,7 @@ public class PushFileTosFTP implements TalendJob {
 			}
 
 			if (execStat) {
-				runStat.updateStatOnConnection("OnSubjobOk5", 0, "ok");
+				runStat.updateStatOnConnection("OnSubjobOk3", 0, "ok");
 			}
 
 			tFTPClose_1Process(globalMap);
@@ -1938,7 +1665,7 @@ public class PushFileTosFTP implements TalendJob {
 	public int portTraces = 4334;
 	public String clientHost;
 	public String defaultClientHost = "localhost";
-	public String contextStr = "LOCAL";
+	public String contextStr = "PROD";
 	public boolean isDefaultContext = true;
 	public String pid = "0";
 	public String rootPid = null;
@@ -2067,10 +1794,52 @@ public class PushFileTosFTP implements TalendJob {
 			}
 			class ContextProcessing {
 				private void processContext_0() {
-					context.setContextType("ARN_DIR", "id_Directory");
-					context.ARN_DIR = (String) context.getProperty("ARN_DIR");
 					context.setContextType("FTP_Temp", "id_String");
 					context.FTP_Temp = (String) context.getProperty("FTP_Temp");
+					context.setContextType("ConnectTimeout", "id_Integer");
+					try {
+						context.ConnectTimeout = routines.system.ParserUtils
+								.parseTo_Integer(context.getProperty("ConnectTimeout"));
+					} catch (NumberFormatException e) {
+						System.err.println(String.format("Null value will be used for context parameter %s: %s",
+								"ConnectTimeout", e.getMessage()));
+						context.ConnectTimeout = null;
+					}
+					context.setContextType("Password", "id_Password");
+					String pwd_Password_value = context.getProperty("Password");
+					context.Password = null;
+					if (pwd_Password_value != null) {
+						if (context_param.containsKey("Password")) {// no need to decrypt if it come from program
+																	// argument or parent job runtime
+							context.Password = pwd_Password_value;
+						} else if (!pwd_Password_value.isEmpty()) {
+							try {
+								context.Password = routines.system.PasswordEncryptUtil
+										.decryptPassword(pwd_Password_value);
+								context.put("Password", context.Password);
+							} catch (java.lang.RuntimeException e) {
+								// do nothing
+							}
+						}
+					}
+					context.setContextType("Port", "id_Integer");
+					try {
+						context.Port = routines.system.ParserUtils.parseTo_Integer(context.getProperty("Port"));
+					} catch (NumberFormatException e) {
+						System.err.println(String.format("Null value will be used for context parameter %s: %s", "Port",
+								e.getMessage()));
+						context.Port = null;
+					}
+					context.setContextType("PrivateKey", "id_File");
+					context.PrivateKey = (String) context.getProperty("PrivateKey");
+					context.setContextType("SecretKey", "id_String");
+					context.SecretKey = (String) context.getProperty("SecretKey");
+					context.setContextType("Server", "id_String");
+					context.Server = (String) context.getProperty("Server");
+					context.setContextType("User", "id_String");
+					context.User = (String) context.getProperty("User");
+					context.setContextType("ARN_DIR", "id_Directory");
+					context.ARN_DIR = (String) context.getProperty("ARN_DIR");
 				}
 
 				public void processAllContext() {
@@ -2086,11 +1855,32 @@ public class PushFileTosFTP implements TalendJob {
 
 		// get context value from parent directly
 		if (parentContextMap != null && !parentContextMap.isEmpty()) {
-			if (parentContextMap.containsKey("ARN_DIR")) {
-				context.ARN_DIR = (String) parentContextMap.get("ARN_DIR");
-			}
 			if (parentContextMap.containsKey("FTP_Temp")) {
 				context.FTP_Temp = (String) parentContextMap.get("FTP_Temp");
+			}
+			if (parentContextMap.containsKey("ConnectTimeout")) {
+				context.ConnectTimeout = (Integer) parentContextMap.get("ConnectTimeout");
+			}
+			if (parentContextMap.containsKey("Password")) {
+				context.Password = (java.lang.String) parentContextMap.get("Password");
+			}
+			if (parentContextMap.containsKey("Port")) {
+				context.Port = (Integer) parentContextMap.get("Port");
+			}
+			if (parentContextMap.containsKey("PrivateKey")) {
+				context.PrivateKey = (String) parentContextMap.get("PrivateKey");
+			}
+			if (parentContextMap.containsKey("SecretKey")) {
+				context.SecretKey = (String) parentContextMap.get("SecretKey");
+			}
+			if (parentContextMap.containsKey("Server")) {
+				context.Server = (String) parentContextMap.get("Server");
+			}
+			if (parentContextMap.containsKey("User")) {
+				context.User = (String) parentContextMap.get("User");
+			}
+			if (parentContextMap.containsKey("ARN_DIR")) {
+				context.ARN_DIR = (String) parentContextMap.get("ARN_DIR");
 			}
 		}
 
@@ -2100,6 +1890,7 @@ public class PushFileTosFTP implements TalendJob {
 		resumeUtil.initCommonInfo(pid, rootPid, fatherPid, projectName, jobName, contextStr, jobVersion);
 
 		List<String> parametersToEncrypt = new java.util.ArrayList<String>();
+		parametersToEncrypt.add("Password");
 		// Resume: jobStart
 		resumeUtil.addLog("JOB_STARTED", "JOB:" + jobName, parent_part_launcher, Thread.currentThread().getId() + "",
 				"", "", "", "", resumeUtil.convertToJsonText(context, parametersToEncrypt));
@@ -2306,6 +2097,6 @@ public class PushFileTosFTP implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 74179 characters generated by Talend Open Studio for Data Integration on the
- * 5 juin 2020 09:58:27 CEST
+ * 69023 characters generated by Talend Open Studio for Data Integration on the
+ * 5 juin 2020 11:16:19 CEST
  ************************************************************************************************/

@@ -4,6 +4,6 @@
     <contextParameter xmi:id="_hwE2gKQ_EeqNu4suIlsq3Q" comment="" name="ARN_DIR" prompt="ARN_DIR?" promptNeeded="false" type="id_Directory" value="D:/Formations/TalendDataIntegration/rna_import_20200501/"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_o30UM527Eeq0OqX8BxO5WQ" confirmationNeeded="false" name="PROD">
-    <contextParameter xmi:id="_hwE2gaQ_EeqNu4suIlsq3Q" comment="" name="ARN_DIR" prompt="ARN_DIR?" promptNeeded="false" type="id_Directory" value=""/>
+    <contextParameter xmi:id="_hwE2gaQ_EeqNu4suIlsq3Q" comment="" name="ARN_DIR" prompt="ARN_DIR?" promptNeeded="false" type="id_Directory" value="D:/Formations/TalendDataIntegration/rna_import_20200501/"/>
   </talendfile:ContextType>
 </xmi:XMI>

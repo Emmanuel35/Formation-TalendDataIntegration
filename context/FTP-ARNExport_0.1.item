@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_G91eQKcMEeqcJuLZiEd-8g" confirmationNeeded="false" name="PROD">
+    <contextParameter xmi:id="_G91eQacMEeqcJuLZiEd-8g" comment="" name="Server" prompt="Server?" promptNeeded="false" type="id_String" value="s-9a896f10184c4d3c8.server.transfer.eu-west-1.amazonaws.com"/>
+    <contextParameter xmi:id="_G91eQqcMEeqcJuLZiEd-8g" comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_Integer" value="22"/>
+    <contextParameter xmi:id="_G91eQ6cMEeqcJuLZiEd-8g" comment="" name="User" prompt="User?" promptNeeded="false" type="id_String" value="formation"/>
+    <contextParameter xmi:id="_G91eRKcMEeqcJuLZiEd-8g" comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_G91eRacMEeqcJuLZiEd-8g" comment="" name="PrivateKey" prompt="PrivateKey?" promptNeeded="false" type="id_File" value="D:/Formations/TalendDataIntegration/formation-AWS.ppk"/>
+    <contextParameter xmi:id="_G91eRqcMEeqcJuLZiEd-8g" comment="" name="SecretKey" prompt="SecretKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_G91eR6cMEeqcJuLZiEd-8g" comment="" name="ConnectTimeout" prompt="ConnectTimeout?" promptNeeded="false" type="id_Integer" value="30000"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_q1DOoKcLEeqcJuLZiEd-8g" confirmationNeeded="false" name="LOCAL">
+    <contextParameter xmi:id="_q1DOoacLEeqcJuLZiEd-8g" comment="" name="Server" prompt="Server?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_q1DOoqcLEeqcJuLZiEd-8g" comment="" name="Port" prompt="Port?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_q1DOo6cLEeqcJuLZiEd-8g" comment="" name="User" prompt="User?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_q1DOpKcLEeqcJuLZiEd-8g" comment="" name="Password" prompt="Password?" promptNeeded="false" type="id_Password" value=""/>
+    <contextParameter xmi:id="_q1DOpacLEeqcJuLZiEd-8g" comment="" name="PrivateKey" prompt="PrivateKey?" promptNeeded="false" type="id_File" value=""/>
+    <contextParameter xmi:id="_q1DOpqcLEeqcJuLZiEd-8g" comment="" name="SecretKey" prompt="SecretKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_GnwgkKcMEeqcJuLZiEd-8g" comment="" name="ConnectTimeout" prompt="ConnectTimeout?" promptNeeded="false" type="id_Integer" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
