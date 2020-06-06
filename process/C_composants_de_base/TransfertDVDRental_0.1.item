@@ -4,7 +4,7 @@
     <contextParameter comment="" name="DVDRental_Login" prompt="DVDRental_Login?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value="dvdrental"/>
     <contextParameter comment="" name="DVDRental_Database" prompt="DVDRental_Database?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value="dvdrental"/>
     <contextParameter comment="" name="DVDRental_Schema" prompt="DVDRental_Schema?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value=""/>
-    <contextParameter comment="" name="DVDRental_Password" prompt="DVDRental_Password?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_Password" value="enc:system.encryption.key.v1:qdEHMZgaRQzOwncYZID5nDl8FhdVOek3zQxaqZDj1SCgzruA1w=="/>
+    <contextParameter comment="" name="DVDRental_Password" prompt="DVDRental_Password?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_Password" value=""/>
     <contextParameter comment="" name="DVDRental_AdditionalParams" prompt="DVDRental_AdditionalParams?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value=""/>
     <contextParameter comment="" name="DVDRental_Port" prompt="DVDRental_Port?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value="5432"/>
     <contextParameter comment="" name="DVDRental_Server" prompt="DVDRental_Server?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value="localhost"/>
@@ -13,7 +13,7 @@
     <contextParameter comment="" name="DVDRental_Login" prompt="DVDRental_Login?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value="dvdrental"/>
     <contextParameter comment="" name="DVDRental_Database" prompt="DVDRental_Database?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value="postgres"/>
     <contextParameter comment="" name="DVDRental_Schema" prompt="DVDRental_Schema?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value=""/>
-    <contextParameter comment="" name="DVDRental_Password" prompt="DVDRental_Password?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_Password" value="enc:system.encryption.key.v1:jD0YCc+fqaUqaUH7eQiAENdsQP8C2vCMSNlGjWGCFoWR7GdwlFKRdsLAQFBQzmFD"/>
+    <contextParameter comment="" name="DVDRental_Password" prompt="DVDRental_Password?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_Password" value=""/>
     <contextParameter comment="" name="DVDRental_AdditionalParams" prompt="DVDRental_AdditionalParams?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value=""/>
     <contextParameter comment="" name="DVDRental_Port" prompt="DVDRental_Port?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value="5432"/>
     <contextParameter comment="" name="DVDRental_Server" prompt="DVDRental_Server?" promptNeeded="false" repositoryContextId="_sXosAKKHEeqztpcIrsZbmw" type="id_String" value="dvdrental.czexjcy20jad.eu-west-1.rds.amazonaws.com"/>
@@ -61,7 +61,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:WzAXUlPl3hKxD4VsZfJsIMjhagogeVE+Ztas2NSC" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:SiD6IlnUOATT2AhypuHaiLhID85V2z6Zurr38onq" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -96,7 +96,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Q25RZntWE0LJ4BXNN5xnSVxZsQv3GCk7V7TSYrzs" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0FajcFmbsOQtE+/NjV/Zytx7Z5SYnEZvI3jlxTpP" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -136,7 +136,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.DVDRental_Database"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DVDRental_Schema"/>
     <elementParameter field="TEXT" name="USER" value="context.DVDRental_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CiwrHkqxF3PihO9WF4eneyZIzEK0exdD+NcLkxuX6D2ndT95+ZHnXBXM7p+RUq3C9Z76dy8t"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2a8vV+irQdXz29GAI9M5MJVuo60KSZ1qcBs0fxP5thlK+M+/8SEtJeg1zZWSPX6xb0oivKOH"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -161,7 +161,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.DVDRental_Database" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="context.DVDRental_Schema" show="false"/>
     <elementParameter field="TEXT" name="USER" value="context.DVDRental_Login" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PVJbjsB8M6U/rr4LC5u9MbAcTd6GjFFJRbsqGLW+RuWh54EOGyVCR1iTgS+PMGgJsJL+1C3L" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:b8m1OrduxnuLxEK0Glds161PItyslWsr2NyCkfdJv1RqEMERgCHTilEFl8GST2smaBG+WtSR" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="_pnTH0KKGEeqztpcIrsZbmw - Sales" show="false"/>
@@ -281,7 +281,7 @@
     <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lo8X7gjkQTw3XKOcM1TlI9mG8Fv1EHjEEPwL95ZY" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sy3PbyOTPvNhJrMj3IV46qZrAOyEMg8bSQqWsy4w" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;sales_big&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -334,6 +334,7 @@
     <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
       <column comment="" defaultValue="" key="true" length="10" name="payment_id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="email" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -362,7 +363,7 @@
     <elementParameter field="TEXT" name="TYPE" value="PostgreSQL" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EIO1QWHBwQNoIgUslPWjR1AyQQ37xe41xAUb8JEd" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eq1H0VOi+8zBCS0gFTNbwkf6LLHo5jxNm52zSf3o" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;sales_low&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -420,6 +421,7 @@
     <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_2">
       <column comment="" defaultValue="" key="true" length="10" name="payment_id" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="email" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -449,6 +451,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBCommit_1" show="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
     <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBCommit_1"/>
   </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_1">

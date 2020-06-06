@@ -4,7 +4,7 @@
     <contextParameter xmi:id="_v1uhMaQAEeqNu4suIlsq3Q" comment="" name="DVDRental_Login" prompt="DVDRental_Login?" promptNeeded="false" type="id_String" value="dvdrental"/>
     <contextParameter xmi:id="_v1uhMqQAEeqNu4suIlsq3Q" comment="" name="DVDRental_Database" prompt="DVDRental_Database?" promptNeeded="false" type="id_String" value="postgres"/>
     <contextParameter xmi:id="_v1uhM6QAEeqNu4suIlsq3Q" comment="" name="DVDRental_Schema" prompt="DVDRental_Schema?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_v1uhNKQAEeqNu4suIlsq3Q" comment="" name="DVDRental_Password" prompt="DVDRental_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:JH6xP7+mhU2NSTW0MkMlc6ogRskhny5f/5AE1mdCmTob/7a6kmhFWOAZo1RTA21w"/>
+    <contextParameter xmi:id="_v1uhNKQAEeqNu4suIlsq3Q" comment="" name="DVDRental_Password" prompt="DVDRental_Password?" promptNeeded="false" type="id_Password" value=""/>
     <contextParameter xmi:id="_v1uhNaQAEeqNu4suIlsq3Q" comment="" name="DVDRental_AdditionalParams" prompt="DVDRental_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_v1uhNqQAEeqNu4suIlsq3Q" comment="" name="DVDRental_Port" prompt="DVDRental_Port?" promptNeeded="false" type="id_String" value="5432"/>
     <contextParameter xmi:id="_v1uhN6QAEeqNu4suIlsq3Q" comment="" name="DVDRental_Server" prompt="DVDRental_Server?" promptNeeded="false" type="id_String" value="dvdrental.czexjcy20jad.eu-west-1.rds.amazonaws.com"/>
@@ -13,7 +13,7 @@
     <contextParameter xmi:id="_sX8OAaKHEeqztpcIrsZbmw" comment="" name="DVDRental_Login" prompt="DVDRental_Login?" promptNeeded="false" type="id_String" value="dvdrental"/>
     <contextParameter xmi:id="_sX8OAqKHEeqztpcIrsZbmw" comment="" name="DVDRental_Database" prompt="DVDRental_Database?" promptNeeded="false" type="id_String" value="dvdrental"/>
     <contextParameter xmi:id="_sX8OA6KHEeqztpcIrsZbmw" comment="" name="DVDRental_Schema" prompt="DVDRental_Schema?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_sX8OBKKHEeqztpcIrsZbmw" comment="" name="DVDRental_Password" prompt="DVDRental_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:KM45Ws14JO8cr92aTkzk75fNtKPexOHxPXs6iwj23ncHVyCWTQ=="/>
+    <contextParameter xmi:id="_sX8OBKKHEeqztpcIrsZbmw" comment="" name="DVDRental_Password" prompt="DVDRental_Password?" promptNeeded="false" type="id_Password" value=""/>
     <contextParameter xmi:id="_sX8OBaKHEeqztpcIrsZbmw" comment="" name="DVDRental_AdditionalParams" prompt="DVDRental_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_sX8OBqKHEeqztpcIrsZbmw" comment="" name="DVDRental_Port" prompt="DVDRental_Port?" promptNeeded="false" type="id_String" value="5432"/>
     <contextParameter xmi:id="_sX8OB6KHEeqztpcIrsZbmw" comment="" name="DVDRental_Server" prompt="DVDRental_Server?" promptNeeded="false" type="id_String" value="localhost"/>

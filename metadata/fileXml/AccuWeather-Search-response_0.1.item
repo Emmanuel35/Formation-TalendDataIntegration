@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:XmlFileConnection xmi:id="_bUsm4KdSEeqcJuLZiEd-8g" name="AccuWeather-Search-response" dataPackage="_bUsnEqdSEeqcJuLZiEd-8g" XmlFilePath="D:/Formations/TalendDataIntegration/AccuWeather-Search-Response.xml" Encoding="UTF-8" inputModel="false" fileContent="3C3F786D6C2076657273696F6E3D22312E302220656E636F64696E673D225554462D38223F3E0D0A3C726F6F743E0D0A093C726F6F743E0D0A09093C56657273696F6E3E313C2F56657273696F6E3E0D0A09093C4B65793E3133323533373C2F4B65793E0D0A09093C547970653E436974793C2F547970653E0D0A09093C52616E6B3E34313C2F52616E6B3E0D0A09093C4C6F63616C697A65644E616D653E52656E6E65733C2F4C6F63616C697A65644E616D653E0D0A09093C456E676C6973684E616D653E52656E6E65733C2F456E676C6973684E616D653E0D0A09093C5072696D617279506F7374616C436F64652F3E0D0A09093C526567696F6E3E0D0A0909093C49443E4555523C2F49443E0D0A0909093C4C6F63616C697A65644E616D653E4575726F70653C2F4C6F63616C697A65644E616D653E0D0A0909093C456E676C6973684E616D653E4575726F70653C2F456E676C6973684E616D653E0D0A09093C2F526567696F6E3E0D0A09093C436F756E7472793E0D0A0909093C49443E46523C2F49443E0D0A0909093C4C6F63616C697A65644E616D653E4672616E63653C2F4C6F63616C697A65644E616D653E0D0A0909093C456E676C6973684E616D653E4672616E63653C2F456E676C6973684E616D653E0D0A09093C2F436F756E7472793E0D0A09093C41646D696E697374726174697665417265613E0D0A0909093C49443E33353C2F49443E0D0A0909093C4C6F63616C697A65644E616D653E496C6C652D65742D56696C61696E653C2F4C6F63616C697A65644E616D653E0D0A0909093C456E676C6973684E616D653E496C6C652D65742D56696C61696E653C2F456E676C6973684E616D653E0D0A0909093C4C6576656C3E313C2F4C6576656C3E0D0A0909093C4C6F63616C697A6564547970653E4465706172746D656E743C2F4C6F63616C697A6564547970653E0D0A0909093C456E676C697368547970653E4465706172746D656E743C2F456E676C697368547970653E0D0A0909093C436F756E74727949443E46523C2F436F756E74727949443E0D0A09093C2F41646D696E697374726174697665417265613E0D0A09093C54696D655A6F6E653E0D0A0909093C436F64653E434553543C2F436F64653E0D0A0909093C4E616D653E4575726F70652F50617269733C2F4E616D653E0D0A0909093C476D744F66667365743E322E303C2F476D744F66667365743E0D0A0909093C49734461796C69676874536176696E673E747275653C2F49734461796C69676874536176696E673E0D0A0909093C4E6578744F66667365744368616E67653E323032302D31302D32355430313A30303A30305A3C2F4E6578744F66667365744368616E67653E0D0A09093C2F54696D655A6F6E653E0D0A09093C47656F506F736974696F6E3E0D0A0909093C4C617469747564653E34382E3131353C2F4C617469747564653E0D0A0909093C4C6F6E6769747564653E2D312E3638313C2F4C6F6E6769747564653E0D0A0909093C456C65766174696F6E3E0D0A090909093C4D65747269633E0D0A09090909093C56616C75653E33302E303C2F56616C75653E0D0A09090909093C556E69743E6D3C2F556E69743E0D0A09090909093C556E6974547970653E353C2F556E6974547970653E0D0A090909093C2F4D65747269633E0D0A090909093C496D70657269616C3E0D0A09090909093C56616C75653E39382E303C2F56616C75653E0D0A09090909093C556E69743E66743C2F556E69743E0D0A09090909093C556E6974547970653E303C2F556E6974547970653E0D0A090909093C2F496D70657269616C3E0D0A0909093C2F456C65766174696F6E3E0D0A09093C2F47656F506F736974696F6E3E0D0A09093C4973416C6961733E66616C73653C2F4973416C6961733E0D0A09093C537570706C656D656E74616C41646D696E41726561733E0D0A0909093C4C6576656C3E323C2F4C6576656C3E0D0A0909093C4C6F63616C697A65644E616D653E52656E6E65733C2F4C6F63616C697A65644E616D653E0D0A0909093C456E676C6973684E616D653E52656E6E65733C2F456E676C6973684E616D653E0D0A09093C2F537570706C656D656E74616C41646D696E41726561733E0D0A09093C44617461536574733E4169725175616C69747943757272656E74436F6E646974696F6E733C2F44617461536574733E0D0A09093C44617461536574733E4169725175616C697479466F726563617374733C2F44617461536574733E0D0A09093C44617461536574733E416C657274733C2F44617461536574733E0D0A09093C44617461536574733E466F726563617374436F6E666964656E63653C2F44617461536574733E0D0A09093C44617461536574733E4D696E757465436173743C2F44617461536574733E0D0A09093C44617461536574733E52616461723C2F44617461536574733E0D0A093C2F726F6F743E0D0A3C2F726F6F743E">
+    <root xmi:id="_bUsm4adSEeqcJuLZiEd-8g" XMLPath="/root" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+    <loop xmi:id="_bUsm4qdSEeqcJuLZiEd-8g" XMLPath="/root/root" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+    <loop xmi:id="_bUsm46dSEeqcJuLZiEd-8g" XMLPath="/root/root/Version" RelatedColumn="Version" Attribute="branch" Order="2" Type="id_Integer"/>
+    <loop xmi:id="_bUsm5KdSEeqcJuLZiEd-8g" XMLPath="/root/root/Key" RelatedColumn="Key" Attribute="branch" Order="3" Type="id_Integer"/>
+    <loop xmi:id="_bUsm5adSEeqcJuLZiEd-8g" XMLPath="/root/root/Type" RelatedColumn="Type" Attribute="branch" Order="4" Type="id_String"/>
+    <loop xmi:id="_bUsm5qdSEeqcJuLZiEd-8g" XMLPath="/root/root/Rank" RelatedColumn="Rank" Attribute="branch" Order="5" Type="id_Integer"/>
+    <loop xmi:id="_bUsm56dSEeqcJuLZiEd-8g" XMLPath="/root/root/LocalizedName" RelatedColumn="LocalizedName" Attribute="branch" Order="6" Type="id_String"/>
+    <loop xmi:id="_bUsm6KdSEeqcJuLZiEd-8g" XMLPath="/root/root/EnglishName" RelatedColumn="EnglishName" Attribute="branch" Order="7" Type="id_String"/>
+    <loop xmi:id="_bUsm6adSEeqcJuLZiEd-8g" XMLPath="/root/root/PrimaryPostalCode" RelatedColumn="PrimaryPostalCode" Attribute="branch" Order="8" Type="id_String"/>
+    <loop xmi:id="_bUsm6qdSEeqcJuLZiEd-8g" XMLPath="/root/root/Region" RelatedColumn="" Attribute="branch" Order="9" Type="id_String"/>
+    <loop xmi:id="_bUsm66dSEeqcJuLZiEd-8g" XMLPath="/root/root/Region/ID" RelatedColumn="ID" Attribute="branch" Order="10" Type="id_String"/>
+    <loop xmi:id="_bUsm7KdSEeqcJuLZiEd-8g" XMLPath="/root/root/Region/LocalizedName" RelatedColumn="LocalizedName1" Attribute="branch" Order="11" Type="id_String"/>
+    <loop xmi:id="_bUsm7adSEeqcJuLZiEd-8g" XMLPath="/root/root/Region/EnglishName" RelatedColumn="EnglishName1" Attribute="branch" Order="12" Type="id_String"/>
+    <loop xmi:id="_bUsm7qdSEeqcJuLZiEd-8g" XMLPath="/root/root/Country" RelatedColumn="" Attribute="branch" Order="13" Type="id_String"/>
+    <loop xmi:id="_bUsm76dSEeqcJuLZiEd-8g" XMLPath="/root/root/Country/ID" RelatedColumn="ID1" Attribute="branch" Order="14" Type="id_String"/>
+    <loop xmi:id="_bUsm8KdSEeqcJuLZiEd-8g" XMLPath="/root/root/Country/LocalizedName" RelatedColumn="LocalizedName2" Attribute="branch" Order="15" Type="id_String"/>
+    <loop xmi:id="_bUsm8adSEeqcJuLZiEd-8g" XMLPath="/root/root/Country/EnglishName" RelatedColumn="EnglishName2" Attribute="branch" Order="16" Type="id_String"/>
+    <loop xmi:id="_bUsm8qdSEeqcJuLZiEd-8g" XMLPath="/root/root/AdministrativeArea" RelatedColumn="" Attribute="branch" Order="17" Type="id_String"/>
+    <loop xmi:id="_bUsm86dSEeqcJuLZiEd-8g" XMLPath="/root/root/AdministrativeArea/ID" RelatedColumn="ID2" Attribute="branch" Order="18" Type="id_Integer"/>
+    <loop xmi:id="_bUsm9KdSEeqcJuLZiEd-8g" XMLPath="/root/root/AdministrativeArea/LocalizedName" RelatedColumn="LocalizedName3" Attribute="branch" Order="19" Type="id_String"/>
+    <loop xmi:id="_bUsm9adSEeqcJuLZiEd-8g" XMLPath="/root/root/AdministrativeArea/EnglishName" RelatedColumn="EnglishName3" Attribute="branch" Order="20" Type="id_String"/>
+    <loop xmi:id="_bUsm9qdSEeqcJuLZiEd-8g" XMLPath="/root/root/AdministrativeArea/Level" RelatedColumn="Level" Attribute="branch" Order="21" Type="id_Integer"/>
+    <loop xmi:id="_bUsm96dSEeqcJuLZiEd-8g" XMLPath="/root/root/AdministrativeArea/LocalizedType" RelatedColumn="LocalizedType" Attribute="branch" Order="22" Type="id_String"/>
+    <loop xmi:id="_bUsm-KdSEeqcJuLZiEd-8g" XMLPath="/root/root/AdministrativeArea/EnglishType" RelatedColumn="EnglishType" Attribute="branch" Order="23" Type="id_String"/>
+    <loop xmi:id="_bUsm-adSEeqcJuLZiEd-8g" XMLPath="/root/root/AdministrativeArea/CountryID" RelatedColumn="CountryID" Attribute="branch" Order="24" Type="id_String"/>
+    <loop xmi:id="_bUsm-qdSEeqcJuLZiEd-8g" XMLPath="/root/root/TimeZone" RelatedColumn="" Attribute="branch" Order="25" Type="id_String"/>
+    <loop xmi:id="_bUsm-6dSEeqcJuLZiEd-8g" XMLPath="/root/root/TimeZone/Code" RelatedColumn="Code" Attribute="branch" Order="26" Type="id_String"/>
+    <loop xmi:id="_bUsm_KdSEeqcJuLZiEd-8g" XMLPath="/root/root/TimeZone/Name" RelatedColumn="Name" Attribute="branch" Order="27" Type="id_String"/>
+    <loop xmi:id="_bUsm_adSEeqcJuLZiEd-8g" XMLPath="/root/root/TimeZone/GmtOffset" RelatedColumn="GmtOffset" Attribute="branch" Order="28" Type="id_Float"/>
+    <loop xmi:id="_bUsm_qdSEeqcJuLZiEd-8g" XMLPath="/root/root/TimeZone/IsDaylightSaving" RelatedColumn="IsDaylightSaving" Attribute="branch" Order="29" Type="id_Boolean"/>
+    <loop xmi:id="_bUsm_6dSEeqcJuLZiEd-8g" XMLPath="/root/root/TimeZone/NextOffsetChange" RelatedColumn="NextOffsetChange" Attribute="branch" Order="30" Type="id_Date"/>
+    <loop xmi:id="_bUsnAKdSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition" RelatedColumn="" Attribute="branch" Order="31" Type="id_String"/>
+    <loop xmi:id="_bUsnAadSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Latitude" RelatedColumn="Latitude" Attribute="branch" Order="32" Type="id_Float"/>
+    <loop xmi:id="_bUsnAqdSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Longitude" RelatedColumn="Longitude" Attribute="branch" Order="33" Type="id_Double"/>
+    <loop xmi:id="_bUsnA6dSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation" RelatedColumn="" Attribute="branch" Order="34" Type="id_String"/>
+    <loop xmi:id="_bUsnBKdSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation/Metric" RelatedColumn="" Attribute="branch" Order="35" Type="id_String"/>
+    <loop xmi:id="_bUsnBadSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation/Metric/Value" RelatedColumn="Value" Attribute="branch" Order="36" Type="id_Float"/>
+    <loop xmi:id="_bUsnBqdSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation/Metric/Unit" RelatedColumn="Unit" Attribute="branch" Order="37" Type="id_Character"/>
+    <loop xmi:id="_bUsnB6dSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation/Metric/UnitType" RelatedColumn="UnitType" Attribute="branch" Order="38" Type="id_Integer"/>
+    <loop xmi:id="_bUsnCKdSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation/Imperial" RelatedColumn="" Attribute="branch" Order="39" Type="id_String"/>
+    <loop xmi:id="_bUsnCadSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation/Imperial/Value" RelatedColumn="Value1" Attribute="branch" Order="40" Type="id_Float"/>
+    <loop xmi:id="_bUsnCqdSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation/Imperial/Unit" RelatedColumn="Unit1" Attribute="branch" Order="41" Type="id_String"/>
+    <loop xmi:id="_bUsnC6dSEeqcJuLZiEd-8g" XMLPath="/root/root/GeoPosition/Elevation/Imperial/UnitType" RelatedColumn="UnitType1" Attribute="branch" Order="42" Type="id_Integer"/>
+    <loop xmi:id="_bUsnDKdSEeqcJuLZiEd-8g" XMLPath="/root/root/IsAlias" RelatedColumn="IsAlias" Attribute="branch" Order="43" Type="id_Boolean"/>
+    <loop xmi:id="_bUsnDadSEeqcJuLZiEd-8g" XMLPath="/root/root/SupplementalAdminAreas" RelatedColumn="" Attribute="branch" Order="44" Type="id_String"/>
+    <loop xmi:id="_bUsnDqdSEeqcJuLZiEd-8g" XMLPath="/root/root/SupplementalAdminAreas/Level" RelatedColumn="Level1" Attribute="branch" Order="45" Type="id_Integer"/>
+    <loop xmi:id="_bUsnD6dSEeqcJuLZiEd-8g" XMLPath="/root/root/SupplementalAdminAreas/LocalizedName" RelatedColumn="LocalizedName4" Attribute="branch" Order="46" Type="id_String"/>
+    <loop xmi:id="_bUsnEKdSEeqcJuLZiEd-8g" XMLPath="/root/root/SupplementalAdminAreas/EnglishName" RelatedColumn="EnglishName4" Attribute="branch" Order="47" Type="id_String"/>
+    <loop xmi:id="_bUsnEadSEeqcJuLZiEd-8g" XMLPath="/root/root/DataSets" RelatedColumn="DataSets" Attribute="branch" Order="48" Type="id_String"/>
+  </TalendMetadata:XmlFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_bUsnEqdSEeqcJuLZiEd-8g" name="default" dataManager="_bUsm4KdSEeqcJuLZiEd-8g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bUsnE6dSEeqcJuLZiEd-8g" id="_A7zAgKdSEeqcJuLZiEd-8g" label="AccueWeather-cities">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnFKdSEeqcJuLZiEd-8g" name="Version" label="Version" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnFadSEeqcJuLZiEd-8g" name="Key" label="Key" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnFqdSEeqcJuLZiEd-8g" name="Type" label="Type" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnF6dSEeqcJuLZiEd-8g" name="Rank" label="Rank" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnGKdSEeqcJuLZiEd-8g" name="LocalizedName" label="LocalizedName" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnGadSEeqcJuLZiEd-8g" name="EnglishName" label="EnglishName" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnGqdSEeqcJuLZiEd-8g" name="PrimaryPostalCode" label="PrimaryPostalCode" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnG6dSEeqcJuLZiEd-8g" name="ID" label="ID" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnHKdSEeqcJuLZiEd-8g" name="LocalizedName" label="LocalizedName1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnHadSEeqcJuLZiEd-8g" name="EnglishName" label="EnglishName1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnHqdSEeqcJuLZiEd-8g" name="ID" label="ID1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnH6dSEeqcJuLZiEd-8g" name="LocalizedName" label="LocalizedName2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnIKdSEeqcJuLZiEd-8g" name="EnglishName" label="EnglishName2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnIadSEeqcJuLZiEd-8g" name="ID" label="ID2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnIqdSEeqcJuLZiEd-8g" name="LocalizedName" label="LocalizedName3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnI6dSEeqcJuLZiEd-8g" name="EnglishName" label="EnglishName3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnJKdSEeqcJuLZiEd-8g" name="Level" label="Level" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnJadSEeqcJuLZiEd-8g" name="LocalizedType" label="LocalizedType" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnJqdSEeqcJuLZiEd-8g" name="EnglishType" label="EnglishType" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnJ6dSEeqcJuLZiEd-8g" name="CountryID" label="CountryID" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnKKdSEeqcJuLZiEd-8g" name="Code" label="Code" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnKadSEeqcJuLZiEd-8g" name="Name" label="Name" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnKqdSEeqcJuLZiEd-8g" name="GmtOffset" label="GmtOffset" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnK6dSEeqcJuLZiEd-8g" name="IsDaylightSaving" label="IsDaylightSaving" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnLKdSEeqcJuLZiEd-8g" name="NextOffsetChange" label="NextOffsetChange" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnLadSEeqcJuLZiEd-8g" name="Latitude" label="Latitude" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnLqdSEeqcJuLZiEd-8g" name="Longitude" label="Longitude" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnL6dSEeqcJuLZiEd-8g" name="Value" label="Value" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnMKdSEeqcJuLZiEd-8g" name="Unit" label="Unit" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnMadSEeqcJuLZiEd-8g" name="UnitType" label="UnitType" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnMqdSEeqcJuLZiEd-8g" name="Value" label="Value1" talendType="id_Float" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnM6dSEeqcJuLZiEd-8g" name="Unit" label="Unit1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnNKdSEeqcJuLZiEd-8g" name="UnitType" label="UnitType1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnNadSEeqcJuLZiEd-8g" name="IsAlias" label="IsAlias" talendType="id_Boolean" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnNqdSEeqcJuLZiEd-8g" name="Level" label="Level1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnN6dSEeqcJuLZiEd-8g" name="LocalizedName" label="LocalizedName4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnOKdSEeqcJuLZiEd-8g" name="EnglishName" label="EnglishName4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bUsnOadSEeqcJuLZiEd-8g" name="DataSets" label="DataSets" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
